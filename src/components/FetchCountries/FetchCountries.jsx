@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { fetchCountries } from 'services/eventsApi';
 // import { Link, Outlet, useLocation } from 'react-router-dom';
 import styles from './FetchCountries.module.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function FetchCountries() {
   // const keyAPI = '1eb36deae800d0e3d9fd1b0466458d26';
