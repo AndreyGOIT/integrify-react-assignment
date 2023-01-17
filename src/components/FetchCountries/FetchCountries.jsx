@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { fetchCountries } from 'services/eventsApi';
-import { nanoid } from 'nanoid';
 // import { Link, Outlet, useLocation } from 'react-router-dom';
 import styles from './FetchCountries.module.css';
 import { Link } from 'react-router-dom';
