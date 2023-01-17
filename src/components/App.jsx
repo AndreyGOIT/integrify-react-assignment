@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home } from '../page/Home';
+import { Home } from '../page/Home/Home';
 // import Products from 'path/to/pages/Products';
 
 export const App = () => {
@@ -7,7 +7,7 @@ export const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/countries" element={<Products />} /> */}
+        {/* <Route path="/country/name" element={<Country />} /> */}
         <Route path="*" element={<Home />} />
       </Routes>
     </div>

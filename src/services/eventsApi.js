@@ -1,8 +1,26 @@
 import axios from 'axios';
 
 export async function fetchCountries() {
-  const response = await axios('https://restcountries.com/v3.1/all');
-  console.log(response.data);
+  try {
+    const response = await axios('https://restcountries.com/v3.1/all', {
+      params: {
+        limit: 5,
+        sort: 'name',
+      },
+    });
+    console.log(response.data);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function fetchOneLand() {
+  const response = await axios('https://restcountries.com/v3.1/name', {
+    params: {
+      ID: 12345,
+    },
+  });
   return response.data;
 }
 // const KEY = '1eb36deae800d0e3d9fd1b0466458d26';

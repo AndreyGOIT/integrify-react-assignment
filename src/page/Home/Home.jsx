@@ -1,5 +1,5 @@
 import styles from './Home.module.css';
-import FetchCountries from '../components/FetchCountries/FetchCountries';
+import FetchCountries from '../../components/FetchCountries/FetchCountries';
 
 export const Home = () => {
   return (
@@ -11,13 +11,6 @@ export const Home = () => {
       <div>
         <FetchCountries />
       </div>
-      {/* <h1>Welcome</h1>
-
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-        laboriosam placeat incidunt rem illum animi nemo quibusdam quia
-        voluptatum voluptate.
-      </p> */}
     </main>
   );
 };

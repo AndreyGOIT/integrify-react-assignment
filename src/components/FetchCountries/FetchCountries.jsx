@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { fetchCountries } from 'services/eventsApi';
-// import { Link, Outlet, useLocation } from 'react-router-dom';
-import styles from './FetchCountries.module.css';
 // import { Link } from 'react-router-dom';
+import { fetchCountries } from 'services/eventsApi';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import styles from './FetchCountries.module.css';
 
 export default function FetchCountries() {
   const [countries, setCountries] = useState(null);
-  //   const location = useLocation;
+  const location = useLocation;
 
   useEffect(() => {
     fetchCountries().then(setCountries);
@@ -24,21 +24,24 @@ export default function FetchCountries() {
             <p>Population</p>
             <p>Languages</p>
           </div>
+          <hr />
           <ul className={styles.list}>
             {countries.map(
               ({ area, name, region, population, flags, languages }) => (
                 <li key={area + population} className={styles.listItem}>
                   <img
                     src={flags.png}
-                    alt={'contry'}
+                    alt={name.common}
                     width={'80'}
                     height={'80'}
                   />
                   <p>{name.common}</p>
                   <p>{region}</p>
                   <p>{population}</p>
-
-                  <p>languages</p>
+                  <p>List of languages</p>
+                  <Link to={`/country/name`} state={location.state}>
+                    arrow
+                  </Link>
                 </li>
                 // <li className={styles.listItem} key={index.toString()}>
                 //   <Link
@@ -52,7 +55,7 @@ export default function FetchCountries() {
               )
             )}
           </ul>
-          {/* <Outlet /> */}
+          <Outlet />
         </>
       )}
     </>
