@@ -16,3 +16,16 @@
   width: 80px;
   height: 80px;
 }
+.tableHeadWrapper {
+  padding: 15px 20px 15px 45px;
+}
+.tableWrapper {
+  padding-left: 30px;
+}
+.equalWidthCols {
+  width: 100%;
+  table-layout: fixed;
+}
+.equalWidthColss td {
+  width: 100%;
+}
