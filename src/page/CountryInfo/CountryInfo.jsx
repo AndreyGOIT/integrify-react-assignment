@@ -12,19 +12,17 @@ export function CountryInfo() {
   console.log(land);
 
   if (!land) return;
-
+  const { area, continents, flags = {}, languages = {} } = land[0];
   return (
     <>
-      <div>Now showing product with name - {name}</div>;
-      {/* <div>
-        <p>{land.name}</p>
-        <img
-          src={land.flags.png}
-          alt={land.name.common}
-          width={'180'}
-          height={'180'}
-        />
-      </div> */}
+      {/* <div>Now showing product with name - {name}</div> */}
+      <div>
+        <b>{name}</b>
+        <p>Area: {area} sq. km</p>
+        <p>Languages: {Object.values(languages).join(', ')}</p>
+        <p>Continents: {continents}</p>
+        <img src={flags.png} alt={name} width={'180'} height={'180'} />
+      </div>
     </>
   );
 }
