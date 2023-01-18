@@ -1,5 +1,5 @@
 // import styles from './Home.module.css';
-import FetchCountries from '../../components/FetchCountries/FetchCountries';
+// import FetchCountries from '../../components/FetchCountries/FetchCountries';
 
 export const Home = () => {
   return (
@@ -8,9 +8,7 @@ export const Home = () => {
         <p className={styles.barText}>Country</p>
         <input type="text" placeholder="Search by counrty name" />
       </div> */}
-      <div>
-        <FetchCountries />
-      </div>
+      <div id="container">{/* <FetchCountries /> */}</div>
     </main>
   );
 };

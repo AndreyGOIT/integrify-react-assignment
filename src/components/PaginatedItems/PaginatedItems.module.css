@@ -1,0 +1,38 @@
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.list {
+  padding: 10px 40px;
+}
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.flag {
+  width: 80px;
+  height: 80px;
+}
+.tableHeadWrapper {
+  padding: 15px 20px 15px 45px;
+}
+.tableWrapper {
+  padding-left: 30px;
+  border-bottom: 1px solid gray;
+}
+.equalWidthCols {
+  width: 100%;
+  table-layout: fixed;
+}
+.equalWidthColss td {
+  width: 100%;
+}
+td {
+  vertical-align: middle;
+}
+tr {
+  vertical-align: middle;
+}
