@@ -39,7 +39,7 @@ export default function FetchCountries() {
           <hr />
           {/* <ul className={styles.list}> */}
           {countries.map(
-            ({ area, name, region, population, flags, languages }) => (
+            ({ name, region, population, flags, languages = {} }) => (
               <div className={styles.tableWrapper}>
                 <table className={styles.equalWidthCols}>
                   <tr>
