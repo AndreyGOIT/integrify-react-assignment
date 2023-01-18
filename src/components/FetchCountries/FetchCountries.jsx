@@ -54,7 +54,7 @@ export default function FetchCountries() {
                     <td>{name.common}</td>
                     <td>{region}</td>
                     <td>{population}</td>
-                    <td>Object.values(languages).join(', ')</td>
+                    <td>{Object.values(languages).join(', ')}</td>
                   </tr>
                 </table>
               </div>
