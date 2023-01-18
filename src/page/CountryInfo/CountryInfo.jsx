@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchOneLand } from '../../services/eventsApi';
 
-export function FetchOneLand() {
+export function CountryInfo() {
   const { name } = useParams();
   const [land, setLand] = useState(null);
 
@@ -15,7 +15,8 @@ export function FetchOneLand() {
 
   return (
     <>
-      <div>
+      <div>Now showing product with name - {name}</div>;
+      {/* <div>
         <p>{land.name}</p>
         <img
           src={land.flags.png}
@@ -23,7 +24,7 @@ export function FetchOneLand() {
           width={'180'}
           height={'180'}
         />
-      </div>
+      </div> */}
     </>
   );
 }
