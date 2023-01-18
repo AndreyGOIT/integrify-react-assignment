@@ -21,6 +21,7 @@
 }
 .tableWrapper {
   padding-left: 30px;
+  border-bottom: 1px solid gray;
 }
 .equalWidthCols {
   width: 100%;
@@ -28,4 +29,10 @@
 }
 .equalWidthColss td {
   width: 100%;
+}
+td {
+  vertical-align: middle;
+}
+tr {
+  vertical-align: middle;
 }

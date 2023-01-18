@@ -2,17 +2,20 @@
   display: flex;
   justify-content: space-between;
   background-color: rgb(92, 43, 240);
-  padding: 5px 25px;
+  padding: 5px 35px;
 }
 input {
   background-color: rgb(109, 94, 239);
   border-style: none;
   color: aliceblue;
+  width: 200px;
+  /* background-image: url(../../images/magnifying-glass-10-svgrepo-com.png); */
 }
 input::placeholder {
-  color: rgb(128, 128, 239);
+  color: rgb(196, 196, 243);
 }
 .barText {
+  margin: 10px 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   color: white;
