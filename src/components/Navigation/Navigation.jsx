@@ -7,9 +7,8 @@ export default function Navigation() {
       <nav>
         <div className={styles.bar}>
           <p className={styles.barText}>Country</p>
-          <input type="text" placeholder="Search by counrty name" />
+          <input type="text" placeholder="Search by country name" />
         </div>
-        <hr />
       </nav>
     </>
   );

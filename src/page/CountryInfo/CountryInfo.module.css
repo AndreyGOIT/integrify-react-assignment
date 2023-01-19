@@ -1,0 +1,18 @@
+.countryInfoWrapper {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+.title {
+  margin-top: 0px;
+}
+.topBlock {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.countryInfo {
+  display: flex;
+  justify-content: space-around;
+}

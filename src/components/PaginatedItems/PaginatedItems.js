@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 import ReactPaginate from 'react-paginate';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './PaginatedItems.module.css';
@@ -17,7 +17,7 @@ function FetchCountries() {
 const items = FetchCountries();
 
 function Items({ currentItems }) {
-  const location = useLocation;
+  const location = useLocation();
   return (
     <>
       {currentItems && (
@@ -72,7 +72,7 @@ function Items({ currentItems }) {
   );
 }
 
-function PaginatedItems({ itemsPerPage }) {
+export default function PaginatedItems({ itemsPerPage }) {
   // We start with an empty list of items.
   const [currentItems, setCurrentItems] = useState(null);
   const [pageCount, setPageCount] = useState(0);
@@ -124,7 +124,7 @@ function PaginatedItems({ itemsPerPage }) {
   );
 }
 
-ReactDOM.render(
-  <PaginatedItems itemsPerPage={5} />,
-  document.getElementById('container')
-);
+// ReactDOM.render(
+//   <PaginatedItems itemsPerPage={5} />,
+//   document.getElementById('container')
+// );
