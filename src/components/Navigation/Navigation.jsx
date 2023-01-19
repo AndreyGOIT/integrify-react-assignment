@@ -6,9 +6,15 @@ export default function Navigation() {
     <>
       <nav>
         <div className={styles.bar}>
-          <Link to="/" className={styles.homeLink}>
-            Home
-          </Link>
+          <div>
+            <Link to="/" className={styles.homeLink}>
+              Home
+            </Link>
+            <Link to="/country" className={styles.countryLink}>
+              Country
+            </Link>
+          </div>
+
           {/* <p className={styles.barText}>Country</p> */}
           <input type="text" placeholder="Search by country name" />
         </div>

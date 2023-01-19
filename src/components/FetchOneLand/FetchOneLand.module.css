@@ -1,0 +1,12 @@
+.section {
+  margin: 10px 20px;
+}
+.listItem {
+  display: flex;
+  gap: 5px;
+}
+
+.flag {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
