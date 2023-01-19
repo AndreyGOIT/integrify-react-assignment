@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/integrify-react-assignment/static/css/main.2203d416.css",
-    "main.js": "/integrify-react-assignment/static/js/main.6ef55588.js",
+    "main.css": "/integrify-react-assignment/static/css/main.cbb8ebab.css",
+    "main.js": "/integrify-react-assignment/static/js/main.b4010b20.js",
     "index.html": "/integrify-react-assignment/index.html",
-    "main.2203d416.css.map": "/integrify-react-assignment/static/css/main.2203d416.css.map",
-    "main.6ef55588.js.map": "/integrify-react-assignment/static/js/main.6ef55588.js.map"
+    "main.cbb8ebab.css.map": "/integrify-react-assignment/static/css/main.cbb8ebab.css.map",
+    "main.b4010b20.js.map": "/integrify-react-assignment/static/js/main.b4010b20.js.map"
   },
   "entrypoints": [
-    "static/css/main.2203d416.css",
-    "static/js/main.6ef55588.js"
+    "static/css/main.cbb8ebab.css",
+    "static/js/main.b4010b20.js"
   ]
 }
