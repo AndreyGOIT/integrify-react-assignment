@@ -7,10 +7,6 @@ import { CountryInfo } from '../page/CountryInfo/CountryInfo';
 export const App = () => {
   return (
     <div>
-      {/* <nav>
-        <Link to="/">Home</Link>
-        <Link to="/country/name">Country</Link>
-      </nav> */}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
