@@ -1,4 +1,4 @@
-// import { Link } from './Navigation.styled';
+import { Link } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
@@ -6,7 +6,10 @@ export default function Navigation() {
     <>
       <nav>
         <div className={styles.bar}>
-          <p className={styles.barText}>Country</p>
+          <Link to="/" className={styles.homeLink}>
+            Home
+          </Link>
+          {/* <p className={styles.barText}>Country</p> */}
           <input type="text" placeholder="Search by country name" />
         </div>
       </nav>
