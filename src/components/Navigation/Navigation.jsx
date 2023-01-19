@@ -16,7 +16,7 @@ export default function Navigation() {
           </div>
 
           {/* <p className={styles.barText}>Country</p> */}
-          <input type="text" placeholder="Search by country name" />
+          {/* <input type="text" placeholder="Search by country name" /> */}
         </div>
       </nav>
     </>

@@ -36,32 +36,42 @@ export default function FetchCountries() {
           </div>
           {/* <hr /> */}
           {countries.map(
-            ({ flag, name, region, population, flags, languages = {} }) => (
-              <div className={styles.tableWrapper}>
+            ({
+              area,
+              flag,
+              name,
+              region,
+              population,
+              flags,
+              languages = {},
+            }) => (
+              <div className={styles.tableWrapper} key={area + population}>
                 <table className={styles.equalWidthCols}>
-                  <tr>
-                    <td className={styles.flagCell}>
-                      <img
-                        src={flags.png}
-                        alt={name.common}
-                        width={'80'}
-                        height={'60'}
-                      />
-                    </td>
-                    <td>{name.common}</td>
-                    <td>{region}</td>
-                    <td>{population}</td>
-                    <td>{Object.values(languages).join(', ')}</td>
-                    <td>
-                      <Link
-                        to={`/country/${name.common}`}
-                        state={location.state}
-                        className={styles.link}
-                      >
-                        {flag}
-                      </Link>
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td className={styles.flagCell}>
+                        <img
+                          src={flags.png}
+                          alt={name.common}
+                          width={'80'}
+                          height={'60'}
+                        />
+                      </td>
+                      <td>{name.common}</td>
+                      <td>{region}</td>
+                      <td>{population}</td>
+                      <td>{Object.values(languages).join(', ')}</td>
+                      <td>
+                        <Link
+                          to={`/country/${name.common}`}
+                          state={location.state}
+                          className={styles.link}
+                        >
+                          {flag}
+                        </Link>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
                 {/* <hr /> */}
               </div>

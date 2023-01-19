@@ -30,7 +30,13 @@ export function CountryInfo() {
           <h1 className={styles.title}>{name}</h1>
         </div>
         <div className={styles.countryInfo}>
-          <img src={flags.png} alt={name} width={'280'} height={'180'} />
+          <img
+            src={flags.png}
+            alt={name}
+            width={'280'}
+            height={'180'}
+            className={styles.flag}
+          />
           <div>
             <p>Capital: {capital}</p>
             <p>Area: {area} sq. km</p>

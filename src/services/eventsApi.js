@@ -4,11 +4,12 @@ axios.defaults.baseURL = 'https://restcountries.com/v3.1';
 
 export async function fetchCountries() {
   try {
+    const params = {
+      page: '1',
+      per_page: '5',
+    };
     const response = await axios('https://restcountries.com/v3.1/all', {
-      params: {
-        limit: 5,
-        sort: 'name',
-      },
+      params,
     });
     console.log(response.data);
     return response.data;
