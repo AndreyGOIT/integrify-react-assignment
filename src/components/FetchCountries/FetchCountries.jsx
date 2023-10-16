@@ -5,11 +5,11 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import styles from './FetchCountries.module.css';
 
 export default function FetchCountries() {
-  const [countries, setCountries] = useState(null);
-  const location = useLocation;
+  const [countries, setCountries] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
-    fetchCountries().then(setCountries);
+    fetchCountries().then(data => setCountries(data));
   }, []);
   console.log(countries);
 
